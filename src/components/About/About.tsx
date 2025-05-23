@@ -1,7 +1,8 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Code, Layers, Zap, Globe } from 'lucide-react';
 import Image from 'next/image';
-import UserImg from '../../assets/img.png';
+import UserImg from '../../../src/assets/img.png';
+
 
 export default function About() {
     const skills = [
