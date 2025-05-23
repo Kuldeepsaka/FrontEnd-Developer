@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+.theme-toggle-btn {
+    background: var(--toggle-btn-bg);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    transition: transform 0.2s ease;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+
+    &:hover {
+        transform: rotate(15deg);
+        color: #f0c420;
+    }
+
+    svg {
+        transition: color 0.3s ease;
+    }
+}

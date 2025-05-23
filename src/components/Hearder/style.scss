@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.custom-navbar.navbar-light.sticky-top {
+    background: var(--color-bg) !important;
+    color: var(--color-text);
+    transition: background-color 0.3s, color 0.3s;
+    position: sticky !important;
+    top: 0;
+    z-index: 1050; // above other content, below modals
+
+    .nav-link {
+        color: var(--color-text) !important;
+
+        &:hover {
+            color: rgba(var(--color-text-rgb), 0.8) !important; // Slightly transparent for hover
+        }
+    }
+
+    .navbar-brand {
+        color: var(--color-text) !important;
+
+        img {
+            background: var(--logo-bg);
+        }
+    }
+}

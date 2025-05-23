@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.search-bar {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    color: var(--text-color);
+    @include transition(background-color, color, border-color);
+    max-width: 300px;
+
+    input {
+        flex: 1;
+        border: none;
+        background: transparent;
+        outline: none;
+        color: inherit;
+        font-size: 1rem;
+    }
+
+    .close-btn {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: inherit;
+        padding: 0 0.25rem;
+    }
+}

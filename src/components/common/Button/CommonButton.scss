@@ -1,0 +1,20 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.common-btn {
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--btn-primary-bg);
+        color: var(--btn-primary-text);
+    @include transition(background-color, color);
+
+  
+
+    &:hover {
+        filter: brightness(1.05);
+    }
+}

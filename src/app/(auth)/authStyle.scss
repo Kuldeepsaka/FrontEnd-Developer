@@ -1,0 +1,15 @@
+
+.auth-screens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85.3vh;
+    .auth-card{
+        .card-header{
+            text-align: center;
+            padding: 20px;
+            border: 0px;
+            background: none;
+        }
+    }
+}

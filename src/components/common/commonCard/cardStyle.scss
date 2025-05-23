@@ -1,0 +1,11 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.card {
+background-color: var(--color-card-bg);
+    color: var(--color-card-text);
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    @include transition(background-color, color);
+}

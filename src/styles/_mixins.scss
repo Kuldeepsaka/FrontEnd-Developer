@@ -1,0 +1,18 @@
+// styles/_mixins.scss
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition($props...) {
+    transition: $props 0.3s ease-in-out;
+}
+
+// Mixin to apply background and text color from CSS variables
+@mixin theme-colors {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    @include transition(background-color, color);
+}

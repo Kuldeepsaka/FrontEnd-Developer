@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    @include transition(background-color, color);
+}
+
+.dashboard-main {
+    display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: calc(100% - 250px);
+
+        @media (max-width: 768px) {
+                width: 100%;
+            }
+        
+}
+
+.dashboard-header {
+    padding: 1rem;
+        display: flex;
+        align-items: center;
+    .toggle-btn{
+        display: none;
+        @media (max-width: 768px) {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+    }
+    .header-links{
+        width: 100%;
+        @media (max-width: 768px) {
+            }
+    }
+
+    .sidebar-toggle-btn {
+        background: none;
+        border: none;
+        color: var(--text-color);
+        cursor: pointer;
+        padding: 0;
+    }
+        .search-icon-btn {
+            background: transparent;
+            border: none;
+        }
+
+   
+}
+
+.dashboard-content {
+    .dashboard-container {
+        padding: 1rem;
+    }
+flex: 1;
+    display: flex;
+    flex-direction: column;
+    .dashboard-footer {
+            margin-top: auto;
+        }
+}
+

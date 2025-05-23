@@ -1,0 +1,52 @@
+// Light theme CSS variables
+:root {
+    --color-bg: -webkit-linear-gradient(96deg, #ffffff 0%, #f0f0f0 50%, #fbfafa 100%);
+    --toggle-btn-bg: #eceaea;
+    --sidebar-bg: #dddada;
+    --color-text: #000000;
+    --color-card-bg: #ffffff;
+    --color-card-text: #000000;
+    --logo-bg: #ffffff;
+    --link-color: #007bff;
+    --hero-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+    --color-primary: #0d6efd;
+    --color-secondary: #6c757d;
+
+    --btn-primary-bg: #007bff;
+        --btn-primary-text: #ffffff;
+        --btn-secondary-bg: #6c757d;
+        --btn-secondary-text: #ffffff;
+
+        --input-bg: #ffffff;
+            --text-color: #000000;
+            --border-color: #ced4da;
+
+    // Add more colors as needed
+}
+
+// Dark theme CSS variables override
+:root[data-bs-theme='dark'] {
+    --color-bg: -webkit-linear-gradient(96deg, #050505 0%, #201e1e 50%, #151313 100%);
+    --toggle-btn-bg: #2c2b2b;
+    --sidebar-bg: #2c2c2c;
+    --color-text: #eeeeee;
+    --color-card-bg: #1e1e1e;
+    --color-card-text: #f0f0f0;
+    --logo-bg: #ffffff;
+    --hero-bg: linear-gradient(135deg, #1a1a1a 0%, #1c2027 100%);
+
+    --color-primary: #0dcdfd; // You can adjust for dark if needed
+    --color-secondary: #adb5bd;
+
+
+    --btn-primary-bg: #d6d6d6;
+        --btn-primary-text: #272727;
+        --btn-secondary-bg: #adb5bd;
+        --btn-secondary-text: #121212;
+
+
+        --input-bg: #1e1e1e;
+            --text-color: #f1f1f1;
+            --border-color: #444;
+}
