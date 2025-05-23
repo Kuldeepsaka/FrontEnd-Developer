@@ -1,7 +1,7 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Code, Layers, Zap, Globe } from 'lucide-react';
 import Image from 'next/image';
-import UserImg from '../../../src/assets/img.png';
+import UserImg from '/public/img.png';
 
 
 export default function About() {
