@@ -1,5 +1,6 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
+export const runtime = 'nodejs'; // Opt-out of Edge
 
 const users = await import('../../../data/user.json').then((m) => m.default);
 
