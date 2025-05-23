@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 import { ArrowDown } from 'lucide-react';
 import Header from '../Hearder/Header';
 import CommonButton from '../common/Button/CommonButton';
-import UserImg from '../../../src/assets/img.png';
+import UserImg from '/public/img.png';
 import Image from 'next/image';
 export default function Hero() {
     const heroRef = useRef<HTMLDivElement>(null);
